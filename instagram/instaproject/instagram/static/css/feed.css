@@ -1,0 +1,55 @@
+.cardView {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.userNickName{
+    box-sizing: border-box;
+    height: 40px;
+    width: 400px;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+.cardImage>img{
+    width: 400px;
+    height: 400px;
+    object-fit:cover;
+  }
+.cardInfo {
+    width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.infoLeft{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 25px;
+}
+.infoRight{
+    display:flex;
+    flex-direction: row-reverse;
+    width: 50%;
+    height: 25px;
+}
+.comment{
+    width: 400px;
+    margin-bottom: 10px;
+}
+.comment_form {
+    width: 400px;
+}
+.comment_form input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgb(66, 66, 66);
+}

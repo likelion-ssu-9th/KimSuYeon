@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+<head>
+{% load static %}
+{% block extrahead %}
+<link href="{% static 'css/feed.css' %}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+</head>
+{% block content %}
+<form action="{% url 'create' %}" method="post" enctype="multipart/form-data">
+    {%csrf_token%}
+    <p>사진 : <input type="file" name="image"></p>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
